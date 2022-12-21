@@ -1,6 +1,4 @@
 import random
 
-
-print("Hello World")
-
-random.randint(0, 10)
+for i in range(10):
+    print(random.randint(0, 10))
