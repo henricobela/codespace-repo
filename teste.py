@@ -1,4 +1,3 @@
-import random
+import streamlit as st
 
-for i in range(10):
-    print(random.randint(0, 10))
+st.write("Teste")
