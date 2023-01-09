@@ -1,4 +1,16 @@
-import requests as req
+from datetime import datetime
 
-r = req.get(url="https://pokeapi.co/api/v2/pokemon/1")
-print(r.status_code)
+born = 1996
+now = datetime.now()
+age = now.year - born
+
+def henrico() -> dict:
+    return {
+      "nome": "Henrico Nardelli Bela",
+      "idade": age,
+      "hobbies": ["Programacao", "Cinema", 
+                  "Series", "Games"]
+    }
+    
+nome, idade, hobbies = henrico().values()
+print(f"Nome: {nome}\nIdade: {idade}\nHobbies: {hobbies}")
